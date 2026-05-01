@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_ITGES_DO_SERVICE</CLSNAME>
+    <LANGU>S</LANGU>
+    <DESCRIPT>Servicio provedro ITGES RD</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_STATUS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Funcion que obtiene el estado</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STATUS</CMPNAME>
+     <SCONAME>/EM4C/CS_ERROR</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>eM4C - Manejador de Errores</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STATUS</CMPNAME>
+     <SCONAME>CT_DATA</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>eM4C - Datos de Sincronizacion</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STATUS</CMPNAME>
+     <SCONAME>CX_AI_SYSTEM_FAULT</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Application Integration: Technical Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STATUS</CMPNAME>
+     <SCONAME>IO_LOGGER</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>eM4C - Historial de Ejecucion</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SAVE_LOGS</CMPNAME>
+     <SCONAME>IO_LOGGER</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>eM4C - Historial de Ejecucion</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

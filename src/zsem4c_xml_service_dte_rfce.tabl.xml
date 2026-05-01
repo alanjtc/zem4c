@@ -3,10 +3,10 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <DD02V>
-    <TABNAME>ZSEM4C_XML_SERVICE_DTE</TABNAME>
+    <TABNAME>ZSEM4C_XML_SERVICE_DTE_RFCE</TABNAME>
     <DDLANGUAGE>S</DDLANGUAGE>
     <TABCLASS>INTTAB</TABCLASS>
-    <DDTEXT>Transformacion (XML DTE)</DDTEXT>
+    <DDTEXT>Transformacion (XML DTE RFCE)</DDTEXT>
     <MASTERLANG>S</MASTERLANG>
     <EXCLASS>1</EXCLASS>
    </DD02V>
