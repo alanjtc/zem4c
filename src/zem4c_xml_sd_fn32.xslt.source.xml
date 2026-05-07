@@ -1,0 +1,235 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates" xmlns:ddic="http://www.sap.com/abapxml/types/dictionary" xmlns:def="http://www.sap.com/abapxml/types/defined">
+  <tt:root name="ECF" type="ddic:ZSEM4C_XML_SERVICE_DTE"/>
+  <tt:template>
+    <ECF>
+      <Encabezado>
+        <Version tt:value-ref=".ECF.ENCABEZADO.VERSION"/>
+        <IdDoc>
+          <TipoeCF tt:value-ref=".ECF.ENCABEZADO.ID_DOC.TIPOECF"/>
+          <eNCF tt:value-ref=".ECF.ENCABEZADO.ID_DOC.ENCF"/>
+          <FechaVencimientoSecuencia tt:value-ref=".ECF.ENCABEZADO.ID_DOC.FECHAVENCIMIENTOSECUENCIA"/>
+          <!--                    <INDICADORENVIODIFERIDO tt:value-ref=".ECF.ENCABEZADO.ID_DOC.INDICADORENVIODIFERIDO"/>-->
+          <!--          <INDICADORSERVICIOTODOINCLUIDO tt:value-ref=".ECF.ENCABEZADO.ID_DOC.INDICADORSERVICIOTODOINCLUIDO"/>-->
+
+          <!--          <TERMINOPAGO tt:value-ref=".ECF.ENCABEZADO.ID_DOC.TERMINOPAGO"/>-->
+          <!--          <FECHADESDE tt:value-ref=".ECF.ENCABEZADO.ID_DOC.FECHADESDE"/>-->
+          <!--          <TOTALPAGINAS tt:value-ref=".ECF.ENCABEZADO.ID_DOC.TOTALPAGINAS"/>-->
+          <!--          <INDICADORNOTACREDITO tt:value-ref=".ECF.ENCABEZADO.ID_DOC.INDICADORNOTACREDITO"/>-->
+          <IndicadorMontoGravado tt:value-ref=".ECF.ENCABEZADO.ID_DOC.INDICADORMONTOGRAVADO"/>
+          <TipoIngresos tt:value-ref=".ECF.ENCABEZADO.ID_DOC.TIPOINGRESOS"/>
+          <TipoPago tt:value-ref=".ECF.ENCABEZADO.ID_DOC.TIPOPAGO"/>
+          <!--          <FECHALIMITEPAGO tt:value-ref=".ECF.ENCABEZADO.ID_DOC.FECHALIMITEPAGO"/>-->
+          <!--          <FECHAHASTA tt:value-ref=".ECF.ENCABEZADO.ID_DOC.FECHAHASTA"/>-->
+        </IdDoc>
+        <Emisor>
+          <RNCEmisor tt:value-ref=".ECF.ENCABEZADO.EMISOR.RNCEMISOR"/>
+          <RazonSocialEmisor tt:value-ref=".ECF.ENCABEZADO.EMISOR.RAZONSOCIALEMISOR"/>
+          <NombreComercial tt:value-ref=".ECF.ENCABEZADO.EMISOR.NOMBRECOMERCIAL"/>
+          <!--          <SUCURSAL tt:value-ref=".ECF.ENCABEZADO.EMISOR.SUCURSAL"/>-->
+          <DireccionEmisor tt:value-ref=".ECF.ENCABEZADO.EMISOR.DIRECCIONEMISOR"/>
+          <!--          <Provincia tt:value-ref=".ECF.ENCABEZADO.EMISOR.PROVINCIA"/>-->
+          <!--          <TABLATELEFONOEMISOR>
+            <tt:loop ref=".ECF.ENCABEZADO.EMISOR.TABLATELEFONOEMISOR">
+              <_-EM4C_-DE_XML_VALUE tt:value-ref="$REF"/>
+            </tt:loop>
+          </TABLATELEFONOEMISOR>
+          <CORREOEMISOR tt:value-ref=".ECF.ENCABEZADO.EMISOR.CORREOEMISOR"/>
+          <ACTIVIDADECONOMICA tt:value-ref=".ECF.ENCABEZADO.EMISOR.ACTIVIDADECONOMICA"/>
+          <ZONAVENTA tt:value-ref=".ECF.ENCABEZADO.EMISOR.ZONAVENTA"/>-->
+          <FechaEmision tt:value-ref=".ECF.ENCABEZADO.EMISOR.FECHAEMISION"/>
+          <!--          <INFORMACIONADICIONALEMISOR tt:value-ref=".ECF.ENCABEZADO.EMISOR.INFORMACIONADICIONALEMISOR"/>-->
+        </Emisor>
+        <Comprador>
+          <RNCComprador tt:value-ref=".ECF.ENCABEZADO.COMPRADOR.RNCCOMPRADOR"/>
+          <!--          <CONTACTOCOMPRADOR tt:value-ref=".ECF.ENCABEZADO.COMPRADOR.CONTACTOCOMPRADOR"/>-->
+          <!--          <CORREOCOMPRADOR tt:value-ref=".ECF.ENCABEZADO.COMPRADOR.CORREOCOMPRADOR"/>-->
+          <!--          <DIRECCIONCOMPRADOR tt:value-ref=".ECF.ENCABEZADO.COMPRADOR.DIRECCIONCOMPRADOR"/>
+          <MUNICIPIOCOMPRADOR tt:value-ref=".ECF.ENCABEZADO.COMPRADOR.MUNICIPIOCOMPRADOR"/>-->
+          <!--          <ProvinciaComprador tt:value-ref=".ECF.ENCABEZADO.COMPRADOR.PROVINCIACOMPRADOR"/>-->
+          <!--          <CONTACTOENTREGA tt:value-ref=".ECF.ENCABEZADO.COMPRADOR.CONTACTOENTREGA"/>
+          <DIRECCIONENTREGA tt:value-ref=".ECF.ENCABEZADO.COMPRADOR.DIRECCIONENTREGA"/>
+          <FECHAORDENCOMPRA tt:value-ref=".ECF.ENCABEZADO.COMPRADOR.FECHAORDENCOMPRA"/>
+          <RESPONSABLEPAGO tt:value-ref=".ECF.ENCABEZADO.COMPRADOR.RESPONSABLEPAGO"/>
+          <INFORMACIONADICIONALCOMPRADOR tt:value-ref=".ECF.ENCABEZADO.COMPRADOR.INFORMACIONADICIONALCOMPRADOR"/>
+          <IDENTIFICADOREXTRANJERO tt:value-ref=".ECF.ENCABEZADO.COMPRADOR.IDENTIFICADOREXTRANJERO"/>
+          <FECHAENTREGA tt:value-ref=".ECF.ENCABEZADO.COMPRADOR.FECHAENTREGA"/>-->
+          <RazonSocialComprador tt:value-ref=".ECF.ENCABEZADO.COMPRADOR.RAZONSOCIALCOMPRADOR"/>
+        </Comprador>
+        <!--        <INFORMACIONESADICIONALES>
+          <NUMEROREFERENCIA tt:value-ref=".ECF.ENCABEZADO.INFORMACIONESADICIONALES.NUMEROREFERENCIA"/>
+          <PESOBRUTO tt:value-ref=".ECF.ENCABEZADO.INFORMACIONESADICIONALES.PESOBRUTO"/>
+          <PESONETO tt:value-ref=".ECF.ENCABEZADO.INFORMACIONESADICIONALES.PESONETO"/>
+          <UNIDADPESOBRUTO tt:value-ref=".ECF.ENCABEZADO.INFORMACIONESADICIONALES.UNIDADPESOBRUTO"/>
+          <CANTIDADBULTO tt:value-ref=".ECF.ENCABEZADO.INFORMACIONESADICIONALES.CANTIDADBULTO"/>
+          <UNIDADBULTO tt:value-ref=".ECF.ENCABEZADO.INFORMACIONESADICIONALES.UNIDADBULTO"/>
+          <UNIDADVOLUMEN tt:value-ref=".ECF.ENCABEZADO.INFORMACIONESADICIONALES.UNIDADVOLUMEN"/>
+          <FECHAEMBARQUE tt:value-ref=".ECF.ENCABEZADO.INFORMACIONESADICIONALES.FECHAEMBARQUE"/>
+          <NUMEROCONTENEDOR tt:value-ref=".ECF.ENCABEZADO.INFORMACIONESADICIONALES.NUMEROCONTENEDOR"/>
+          <NUMEROEMBARQUE tt:value-ref=".ECF.ENCABEZADO.INFORMACIONESADICIONALES.NUMEROEMBARQUE"/>
+        </INFORMACIONESADICIONALES>-->
+        <Totales>
+          <MontoGravadoTotal tt:value-ref=".ECF.ENCABEZADO.TOTALES.MONTOGRAVADOTOTAL"/>
+          <MontoGravadoI1 tt:value-ref=".ECF.ENCABEZADO.TOTALES.MONTOGRAVADOI1"/>
+          <!--          <MontoGravadoI2 tt:value-ref=".ECF.ENCABEZADO.TOTALES.MONTOGRAVADOI2"/>-->
+<!--          <MontoGravadoI3 tt:value-ref=".ECF.ENCABEZADO.TOTALES.MONTOGRAVADOI3"/>-->
+          <MontoExento tt:value-ref=".ECF.ENCABEZADO.TOTALES.MONTOEXENTO"/>
+          <!--          <MontoExento tt:value-ref=".ECF.ENCABEZADO.TOTALES.MONTOEXENTO"/>-->
+          <ITBIS1 tt:value-ref=".ECF.ENCABEZADO.TOTALES.ITBIS1"/>
+          <!--          <ITBIS2 tt:value-ref=".ECF.ENCABEZADO.TOTALES.ITBIS2"/>-->
+<!--          <ITBIS3 tt:value-ref=".ECF.ENCABEZADO.TOTALES.ITBIS3"/>-->
+
+          <TotalITBIS tt:value-ref=".ECF.ENCABEZADO.TOTALES.TOTALITBIS"/>
+          <TotalITBIS1 tt:value-ref=".ECF.ENCABEZADO.TOTALES.TOTALITBIS1"/>
+          <!--          <TotalITBIS2 tt:value-ref=".ECF.ENCABEZADO.TOTALES.TOTALITBIS2"/>-->
+<!--          <TotalITBIS3 tt:value-ref=".ECF.ENCABEZADO.TOTALES.TOTALITBIS3"/>-->
+          <!--          <IMPUESTOSADICIONALES>
+            <tt:loop ref=".ECF.ENCABEZADO.TOTALES.IMPUESTOSADICIONALES">
+              <_-EM4C_-DE_XML_VALUE tt:value-ref="$REF"/>
+            </tt:loop>
+          </IMPUESTOSADICIONALES>-->
+          <MontoTotal tt:value-ref=".ECF.ENCABEZADO.TOTALES.MONTOTOTAL"/>
+          <!--          <MONTONOFACTURABLE tt:value-ref=".ECF.ENCABEZADO.TOTALES.MONTONOFACTURABLE"/>
+          <SALDOANTERIOR tt:value-ref=".ECF.ENCABEZADO.TOTALES.SALDOANTERIOR"/>
+          <TOTALITBISRETENIDO tt:value-ref=".ECF.ENCABEZADO.TOTALES.TOTALITBISRETENIDO"/>
+          <MONTOAVANCEPAGO tt:value-ref=".ECF.ENCABEZADO.TOTALES.MONTOAVANCEPAGO"/>
+          <TOTALISRRETENCION tt:value-ref=".ECF.ENCABEZADO.TOTALES.TOTALISRRETENCION"/>
+          <TOTALISRPERCEPCION tt:value-ref=".ECF.ENCABEZADO.TOTALES.TOTALISRPERCEPCION"/>-->
+<!--          <MontoNoFacturable tt:value-ref=".ECF.ENCABEZADO.TOTALES.MONTONOFACTURABLE"/>-->
+        </Totales>
+        <!--        <OTRAMONEDA>
+          <MONTOGRAVADOTOTALOTRAMONEDA tt:value-ref=".ECF.ENCABEZADO.OTRAMONEDA.MONTOGRAVADOTOTALOTRAMONEDA"/>
+          <MONTOGRAVADO1OTRAMONEDA tt:value-ref=".ECF.ENCABEZADO.OTRAMONEDA.MONTOGRAVADO1OTRAMONEDA"/>
+          <MONTOGRAVADO2OTRAMONEDA tt:value-ref=".ECF.ENCABEZADO.OTRAMONEDA.MONTOGRAVADO2OTRAMONEDA"/>
+          <MONTOEXENTOOTRAMONEDA tt:value-ref=".ECF.ENCABEZADO.OTRAMONEDA.MONTOEXENTOOTRAMONEDA"/>
+          <TOTALITBIS3OTRAMONEDA tt:value-ref=".ECF.ENCABEZADO.OTRAMONEDA.TOTALITBIS3OTRAMONEDA"/>
+          <MONTOTOTALOTRAMONEDA tt:value-ref=".ECF.ENCABEZADO.OTRAMONEDA.MONTOTOTALOTRAMONEDA"/>
+          <MONTOIMPUESTOADICIONALOTRAMONE tt:value-ref=".ECF.ENCABEZADO.OTRAMONEDA.MONTOIMPUESTOADICIONALOTRAMONE"/>
+          <IMPUESTOSADICIONALESOTRAMONEDA>
+            <IMPUESTOADICIONALOTRAMONEDA>
+              <tt:loop ref=".ECF.ENCABEZADO.OTRAMONEDA.IMPUESTOSADICIONALESOTRAMONEDA.IMPUESTOADICIONALOTRAMONEDA">
+                <ZSEM4C_XML_SERVICE_ADDTAXCURR>
+                  <TIPOIMPUESTOOTRAMONEDA tt:value-ref="TIPOIMPUESTOOTRAMONEDA"/>
+                  <TASAIMPUESTOADICIONALOTRAMONED tt:value-ref="TASAIMPUESTOADICIONALOTRAMONED"/>
+                </ZSEM4C_XML_SERVICE_ADDTAXCURR>
+              </tt:loop>
+            </IMPUESTOADICIONALOTRAMONEDA>
+          </IMPUESTOSADICIONALESOTRAMONEDA>
+        </OTRAMONEDA>-->
+      </Encabezado>
+      <DetallesItems>
+        <tt:loop ref=".ECF.DETALLESITEMS">
+          <Item>
+            <NumeroLinea tt:value-ref="NUMEROLINEA"/>
+            <!--            <TABLACODIGOSITEM>
+              <tt:loop ref="TABLACODIGOSITEM">
+                <ZSEM4C_XML_SERVICE_CODITEM>
+                  <TIPOCODIGO tt:value-ref="TIPOCODIGO"/>
+                  <CODIGOITEM tt:value-ref="CODIGOITEM"/>
+                </ZSEM4C_XML_SERVICE_CODITEM>
+              </tt:loop>
+            </TABLACODIGOSITEM>-->
+            <IndicadorFacturacion tt:value-ref="INDICADORFACTURACION"/>
+            <NombreItem tt:value-ref="NOMBREITEM"/>
+            <IndicadorBienoServicio tt:value-ref="INDICADORBIENOSERVICIO"/>
+            <!--            <DESCRIPCIONITEM tt:value-ref="DESCRIPCIONITEM"/>-->
+            <CantidadItem tt:value-ref="CANTIDADITEM"/>
+            <!--            <UnidadMedida tt:value-ref="UNIDADMEDIDA"/>-->
+            <!--            <CANTIDADREFERENCIA tt:value-ref="CANTIDADREFERENCIA"/>
+            <UNIDADREFERENCIA tt:value-ref="UNIDADREFERENCIA"/>
+            <PRECIOUNITARIOREFERENCIA tt:value-ref="PRECIOUNITARIOREFERENCIA"/>-->
+            <PrecioUnitarioItem tt:value-ref="PRECIOUNITARIOITEM"/>
+            <!--            <TABLASUBDESCUENTO>
+              <SUBDESCUENTO>
+                <tt:loop ref="TABLASUBDESCUENTO.SUBDESCUENTO">
+                  <_-EM4C_-DE_XML_VALUE tt:value-ref="$REF"/>
+                </tt:loop>
+              </SUBDESCUENTO>
+            </TABLASUBDESCUENTO>
+            <TABLASUBRECARGO>
+              <SUBRECARGO>
+                <tt:loop ref="TABLASUBRECARGO.SUBRECARGO">
+                  <_-EM4C_-DE_XML_VALUE tt:value-ref="$REF"/>
+                </tt:loop>
+              </SUBRECARGO>
+            </TABLASUBRECARGO>
+            <TABLAIMPUESTOADICIONAL>
+              <IMPUESTOADICIONAL>
+                <tt:loop ref="TABLAIMPUESTOADICIONAL.IMPUESTOADICIONAL">
+                  <_-EM4C_-DE_XML_VALUE tt:value-ref="$REF"/>
+                </tt:loop>
+              </IMPUESTOADICIONAL>
+            </TABLAIMPUESTOADICIONAL>
+            <OTRAMONEDADETALLE>
+              <DESCUENTOOTRAMONEDA tt:value-ref="OTRAMONEDADETALLE.DESCUENTOOTRAMONEDA"/>
+              <RECARGOOTRAMONEDA tt:value-ref="OTRAMONEDADETALLE.RECARGOOTRAMONEDA"/>
+              <MONTOITEMOTRAMONEDA tt:value-ref="OTRAMONEDADETALLE.MONTOITEMOTRAMONEDA"/>
+            </OTRAMONEDADETALLE>
+            <GRADOSALCOHOL tt:value-ref="GRADOSALCOHOL"/>
+            <FECHAELABORACION tt:value-ref="FECHAELABORACION"/>
+            <DESCUENTOMONTO tt:value-ref="DESCUENTOMONTO"/>
+            <RETENCION>
+              <INDICADORAGENTERETENCIONOPERCE tt:value-ref="RETENCION.INDICADORAGENTERETENCIONOPERCE"/>
+              <MONTOITBISRETENIDO tt:value-ref="RETENCION.MONTOITBISRETENIDO"/>
+              <MONTOISRRETENIDO tt:value-ref="RETENCION.MONTOISRRETENIDO"/>
+            </RETENCION>
+            <FECHAVENCIMIENTOITEM tt:value-ref="FECHAVENCIMIENTOITEM"/>-->
+            <MontoItem tt:value-ref="MONTOITEM"/>
+          </Item>
+        </tt:loop>
+      </DetallesItems>
+      <!--      <SUBTOTALES>
+        <DESCRIPCIONSUBTOTAL tt:value-ref=".ECF.SUBTOTALES.DESCRIPCIONSUBTOTAL"/>
+        <SUBTOTALMONTOGRAVADOI1 tt:value-ref=".ECF.SUBTOTALES.SUBTOTALMONTOGRAVADOI1"/>
+        <SUBTOTALMONTOGRAVADOI3 tt:value-ref=".ECF.SUBTOTALES.SUBTOTALMONTOGRAVADOI3"/>
+        <SUBTOTALIMPUESTOADICIONAL tt:value-ref=".ECF.SUBTOTALES.SUBTOTALIMPUESTOADICIONAL"/>
+        <NUMEROSUBTOTAL tt:value-ref=".ECF.SUBTOTALES.NUMEROSUBTOTAL"/>
+        <SUBTOTALMONTOGRAVADOTOTAL tt:value-ref=".ECF.SUBTOTALES.SUBTOTALMONTOGRAVADOTOTAL"/>
+        <SUBTOTAITBIS1 tt:value-ref=".ECF.SUBTOTALES.SUBTOTAITBIS1"/>
+        <SUBTOTAITBIS2 tt:value-ref=".ECF.SUBTOTALES.SUBTOTAITBIS2"/>
+        <SUBTOTAITBIS3 tt:value-ref=".ECF.SUBTOTALES.SUBTOTAITBIS3"/>
+        <MONTOSUBTOTAL tt:value-ref=".ECF.SUBTOTALES.MONTOSUBTOTAL"/>
+        <ORDEN tt:value-ref=".ECF.SUBTOTALES.ORDEN"/>
+      </SUBTOTALES>-->
+      <!--<DescuentosORecargos>
+        <tt:loop ref=".ECF.DESCUENTOSORECARGOS">
+          <DescuentoORecargo>
+            <NumeroLinea tt:value-ref="NUMEROLINEA"/>
+
+            <TIPOAJUSTE tt:value-ref="TIPOAJUSTE"/>
+            <INDICADORNORMA1007 tt:value-ref="INDICADORNORMA1007"/>
+            <TipoValor tt:value-ref="TIPOVALOR"/>
+            <DescripcionDescuentooRecargo tt:value-ref="DESCRVALORDESCUENTOORECARGOIPC"/>
+            <MONTODESCUENTOORECARGOOTRAMONE tt:value-ref="MONTODESCUENTOORECARGOOTRAMONE"/>
+            <INDICADORFACTURACIONDESCUENTOO tt:value-ref="INDICADORFACTURACIONDESCUENTOO"/>
+
+            <ValorDescuentooRecargo tt:value-ref="VALORDESCUENTOORECARGO"/>
+          </DescuentoORecargo>
+        </tt:loop>
+      </DescuentosORecargos>-->
+      <!--      <PAGINACION>
+        <PAGINA>
+          <tt:loop ref=".ECF.PAGINACION.PAGINA">
+            <ZSEM4C_XML_SERVICE_PAGE>
+              <SUBTOTALITBIS1PAGINA tt:value-ref="SUBTOTALITBIS1PAGINA"/>
+              <SUBTOTALITBIS2PAGINA tt:value-ref="SUBTOTALITBIS2PAGINA"/>
+              <SUBTOTALIMPUESTOADICIONALPAGIN tt:value-ref="SUBTOTALIMPUESTOADICIONALPAGIN"/>
+              <SUBTOTALIMPUESTOADICIONAL>
+                <SUBTOTALIMPUESTOSELECTIVOCONSU tt:value-ref="SUBTOTALIMPUESTOADICIONAL.SUBTOTALIMPUESTOSELECTIVOCONSU"/>
+                <SUBTOTALOTROSIMPUESTO tt:value-ref="SUBTOTALIMPUESTOADICIONAL.SUBTOTALOTROSIMPUESTO"/>
+              </SUBTOTALIMPUESTOADICIONAL>
+            </ZSEM4C_XML_SERVICE_PAGE>
+          </tt:loop>
+        </PAGINA>
+      </PAGINACION>-->
+      <!--      <INFORMACIONREFERENCIA>
+        <NCFMODIFICADO tt:value-ref=".ECF.INFORMACIONREFERENCIA.NCFMODIFICADO"/>
+        <RNCOTROCONTRIBUYENTE tt:value-ref=".ECF.INFORMACIONREFERENCIA.RNCOTROCONTRIBUYENTE"/>
+        <FECHANCFMODIFICADO tt:value-ref=".ECF.INFORMACIONREFERENCIA.FECHANCFMODIFICADO"/>
+        <CODIGOMODIFICACION tt:value-ref=".ECF.INFORMACIONREFERENCIA.CODIGOMODIFICACION"/>
+        <RAZONMODIFICACION tt:value-ref=".ECF.INFORMACIONREFERENCIA.RAZONMODIFICACION"/>
+      </INFORMACIONREFERENCIA>-->
+      <FechaHoraFirma tt:value-ref=".ECF.FECHAHORAFIRMA"/>
+    </ECF>
+  </tt:template>
+</tt:transform>

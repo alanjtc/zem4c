@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Grupo de funciones ZEM4C</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZEM4C_FGTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZEM4C_FG</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFM_EM4C_SD_PRINT_PDF</FUNCNAME>
+     <SHORT_TEXT>Imprimir PDF</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_VBELN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBELN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_DOC_FTE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/EM4C/DE_FEL_DOCFTE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_VBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Número de documento comercial</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_DOC_FTE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Documento fuente</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_EM4C_SD_VALIDARFACTURA</FUNCNAME>
+     <SHORT_TEXT>Validar factura entrante del monitor</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RESULT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SYST_SUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_VBRK</PARAMETER>
+       <DBSTRUCT>VBRK</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EV_RESULT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_VBRK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Factura: Datos de cabecera</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

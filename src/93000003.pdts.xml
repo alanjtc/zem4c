@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PDTS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PDTS>
+    <SHORT_TEXT>ZEM4C_Sync</SHORT_TEXT>
+    <PLVAR>01</PLVAR>
+    <WI_TEXT>Sincronización Factura &amp;IV_VBELN&amp;</WI_TEXT>
+    <METHOD>
+     <OTYPE>TS</OTYPE>
+     <OBJID>93000003</OBJID>
+     <CLSNAM>ZCL_EM4C_WF_BUS2037</CLSNAM>
+     <CLSMET>RUN</CLSMET>
+     <METHTYPE>CL</METHTYPE>
+     <BACKGROUND>X</BACKGROUND>
+     <SYNCHRON>X</SYNCHRON>
+     <TSKRELSTAT>R</TSKRELSTAT>
+    </METHOD>
+    <STARTING_EVENTS>
+     <HRSEVENTS>
+      <SUBTY>0001</SUBTY>
+      <CLSTYP>BO</CLSTYP>
+      <OBJTYP>BUS2037</OBJTYP>
+      <EVENT>CREATED</EVENT>
+     </HRSEVENTS>
+    </STARTING_EVENTS>
+    <STARTING_EVENTS_BINDING>
+     <HRS1212>
+      <OTYPE>TS</OTYPE>
+      <OBJID>93000003</OBJID>
+      <SUBTY>0001</SUBTY>
+      <CLSTYP>BO</CLSTYP>
+      <OBJTYP>BUS2037</OBJTYP>
+      <EVENT>CREATED</EVENT>
+      <DATAFLOW>E</DATAFLOW>
+      <TAB_INDEX>000001</TAB_INDEX>
+      <EXPR>&amp;_EVT_OBJKEY&amp;</EXPR>
+      <TARGETEXPR>&amp;IV_VBELN&amp;</TARGETEXPR>
+      <OPERATION>ASN</OPERATION>
+      <OPCLASS>E</OPCLASS>
+     </HRS1212>
+    </STARTING_EVENTS_BINDING>
+   </PDTS>
+   <CONTAINER>
+    <CONTAINER>
+     <PROPERTIES>
+      <OWN_ID>
+       <INSTID>TS93000003</INSTID>
+       <TYPEID>CL_SWF_CNT_HRS_PERSISTENCE</TYPEID>
+       <CATID>CL</CATID>
+      </OWN_ID>
+      <PROPSTRING>23</PROPSTRING>
+      <XMLVERSION>0002</XMLVERSION>
+      <INTERNAL>X</INTERNAL>
+      <EXDEFINITN>
+       <NAME>_DEF_EXT</NAME>
+       <POR>
+        <INSTID>DIALOG_STEP_CONTAINER</INSTID>
+        <TYPEID>CL_SWF_CNT_PERSISTENCE_DEF_EXT</TYPEID>
+        <CATID>CL</CATID>
+       </POR>
+      </EXDEFINITN>
+     </PROPERTIES>
+     <ELEMENTS>
+      <N NAME="IV_VBELN::" TYPE="::VBELN_VF:C:10:0" PROPS="0C001001"/>
+     </ELEMENTS>
+    </CONTAINER>
+   </CONTAINER>
+  </asx:values>
+ </asx:abap>
+</abapGit>

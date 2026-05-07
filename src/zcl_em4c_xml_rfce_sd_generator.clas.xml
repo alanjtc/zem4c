@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_EM4C_XML_RFCE_SD_GENERATOR</CLSNAME>
+    <LANGU>S</LANGU>
+    <DESCRIPT>eM4C - Generador (SD)</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_TIPOECF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>NCF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MAP_FECHAHORAFIRMA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Mapear FechaHoraFirma</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MAP_XML_VERSION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Mapear la version del XML</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>MAP_DISC_REC</CMPNAME>
+     <SCONAME>RT_DATA</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Transformation (XML Descuentos o Recargos)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>MAP_FECHAHORAFIRMA</CMPNAME>
+     <SCONAME>RV_DATA</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Valor</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>MAP_XML_VERSION</CMPNAME>
+     <SCONAME>RV_DATA</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Transformacion (XML IdDoc)</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
